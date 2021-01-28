@@ -1,7 +1,7 @@
  variable "location" {
     type = string
     description = "resource location"
-    default = "south africa north"
+    default = "East US"
 }
 
 variable "kubernetes_version" {
