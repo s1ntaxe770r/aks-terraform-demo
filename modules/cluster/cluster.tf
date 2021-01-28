@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "aks-resource" {
-    name = "aks-resource"
+    name = "kubernetes-resource-group"
     location = var.location  
 }
 
@@ -25,7 +25,7 @@ resource "azurerm_kubernetes_cluster" "aks-cluster" {
 
 
     linux_profile {
-        admin_username = "terrauser"
+        admin_username = var.admin_user
         ssh_key {
             key_data = var.ssh_key
         }
