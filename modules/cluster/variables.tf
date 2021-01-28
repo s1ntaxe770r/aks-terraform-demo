@@ -10,12 +10,16 @@ variable "kubernetes_version" {
   default = "1.19.1" 
 }
 
-variable "ssh_key" {
-   description = "ssh_key for admin_user"
-}
 
 variable "admin_user"{
   type = string
   description = "username for linux_profile"
   default = "enderdragon"
 }
+
+
+variable "ssh_key" {
+   description = "ssh_key for admin_user"
+}
+
+
